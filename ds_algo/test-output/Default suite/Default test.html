@@ -1,0 +1,820 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>141/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 09 16:27:58 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>242 seconds (242633 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful registration with valid credentials", "Optional[Register]"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1066)
+	at org.testng.Assert.assertEquals(Assert.java:1030)
+	at org.testng.Assert.assertEquals(Assert.java:1076)
+	at stepDefinitions.Register_SD.user_should_be_able_to_successfully_register_and_see_the_success_message(Register_SD.java:66)
+	at ✽.User should be  able to  successfully register and see the success message &quot;New Account Created.&quot;(file:///Users/Dee/eclipse-workspace/ds_algo/src/test/resources/Features/02_Register.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1504267535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504267535'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1066)
+	at org.testng.Assert.assertEquals(Assert.java:1030)
+	at org.testng.Assert.assertEquals(Assert.java:1076)
+	at stepDefinitions.Register_SD.user_should_be_able_to_successfully_register_and_see_the_success_message(Register_SD.java:66)
+	at ✽.User should be  able to  successfully register and see the success message &quot;New Account Created.&quot;(file:///Users/Dee/eclipse-workspace/ds_algo/src/test/resources/Features/02_Register.feature:25)
+</pre></div></td>
+<td>6</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates to HomePage of ds-algo application", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Traversals-Illustration page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Stack page", "Optional[Stack]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for 'Graph Representations' TryEditor", "Optional[Graph]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor in 'Deletion' page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Types of Binary Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Arrays in Python' link", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for Arrays in Python TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating login with empty fields", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Binary Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on dropdown without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Tree Traversals page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Types of Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User opens Home page and clicks on Register", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login with valid  and invalid credentials", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Implementation of Queue in Python", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Linked List page features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Graph Representations' link", "Optional[Graph]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Types of Trees and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on dropdown without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Traversals-Illustration and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Graph page", "Optional[Graph]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor 'Implementation using array'", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Tree Traversals page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Creating Linked List' link and its features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate TryEditor for 'Max consecutive ones' in Practice Questions", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Intro page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Implementation in Python and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for 'Graph' TryEditor", "Optional[Graph]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on dropdown without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor 'Implementation of Queue' in Python", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Binary Search Trees and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Binary Tree Traversals page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating registration with valid username and  empty password field", "Optional[Register]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate TryEditor for 'Find Numbers with Even number of digits' in Practice Questions", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for Arrays using List TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for 'Applications' tryEditor", "Optional[Stack]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor in Traversal page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Binary Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for Applications of Array TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor 'Implementation using array'", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor in 'Implement Linked List in Python' page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Implementation' link", "Optional[Stack]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Implementation Of BST page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Implementation Of BST page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Implement Linked List in Python' link and its features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Operations in Stack' link", "Optional[Stack]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User opens Home page and clicks on Signin", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor in 'Types of Linked List'  page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Graph' link", "Optional[Graph]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login with valid  and invalid credentials", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate password mismatch", "Optional[Register]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Implementation Of BST and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating registration with empty fields", "Optional[Register]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Insertion' link and its features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Implementation of Binary Trees and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Intro page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Tree Traversals and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Deletion' link and its features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor in Types of Linked List -  page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Traversals-Illustration page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for Basic operations in List TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Data Structures Introduction page", "Optional[Data Structures-Intro]"</td>
+<td></td>
+<td>6</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate TryEditor for 'Squares of a sorted array' in Practice Questions", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Types of Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Types of Binary Trees and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor in 'Deletion' page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for Arrays using List TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigating to Register page from ds-algo portal", "Optional[Register]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Terminologies and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login with valid  and invalid credentials", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Arrays Using List' link", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Binary Search Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on dropdown without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Types of Binary Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Implementation using array' and its features", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for 'Implementation' TryEditor", "Optional[Stack]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Applications of Binary trees and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigating to Login page from Register page", "Optional[Register]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Applications of Binary trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Tree page features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor 'Overview of Trees' page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Implementation using collections.deque", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Implementation of Binary Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Practice Questions' link", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Implementation in Python page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Signout", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Applications of Binary trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for 'Operations in Stack' TryEditor", "Optional[Stack]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Array page", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Terminologies page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Implementation of Binary Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for 'Graph Representations' tryEditor", "Optional[Graph]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Applications' link", "Optional[Stack]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor in 'Creating Linked List'  page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Queue Operations and its features", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on dropdown without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate TryEditor for 'Search for array' in Practice Questions", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login with valid  and invalid credentials", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor in 'Implement Linked List in Python' page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for Applications of Array TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Terminologies page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor in 'Creating Linked List'  page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating login with empty fields", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login with valid  and invalid credentials", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for 'Implementation' tryEditor", "Optional[Stack]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Implementation in Python page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for Arrays in Python TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Binary Search Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Traversal' link and its features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Queue page features", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for Basic Operations in List TryEditor", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor in 'Traversal' page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Basic Operations in List' link", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation invalid python code for 'Applications' TryEditor", "Optional[Stack]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Practice Question link", "Optional[Graph]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor 'Implementation using array'", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Types of Linked List' link and its features", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for 'Operations in Stack' tryEditor", "Optional[Stack]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating registration with empty Username, valid Password  and Password  confirmation field", "Optional[Register]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Binary Trees and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating registration with valid Username, Password  and  empty Password  confirmation field", "Optional[Register]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Implementation using collections.deque", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Binary Tree Traversals and its features", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating login with empty fields", "Optional[SignIn Validation]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating 'Implementation using collections.deque' and its features", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor in Insertion page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying invalid code in the text editor - Overview of Trees page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor - Binary Tree Traversals page", "Optional[Validating the Tree page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  python code for 'Graph' tryEditor", "Optional[Graph]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on Get Started button on HomePage without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and clicks on dropdown without sign in", "Optional[GetStarted button  and HomePage]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 'Applications of Array' link", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor 'Implementation using array'", "Optional[Validating the Queue page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+<tr>
+<td title='testRunner.RunTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying valid code in the text editor in 'Insertion' page", "Optional[Validating the LinkedList page and its features]"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.RunTest@4fb0f2b9</td></tr>
+</table><p>
+</body>
+</html>
